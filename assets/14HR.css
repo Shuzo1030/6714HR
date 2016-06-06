@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@font-face{
+      font-family: "webfont1";
+      src: url(./fonts/14hr_font.ttf);
+}
+
+div{display: block;}
+li{list-style: none !important;}
+a{text-decoration: none;color: #333;}
+
+html,body{height: 100%;}
+
+body{
+      background-image: url(images/bgimg2.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      margin: 0;
+}
+
+#container{
+      display: block;
+      width: 100%;
+      font-family: 'Noto Sans Japanese', sans-serif;
+      font-weight: 300;
+      color: #333;
+}
+
+#content{
+      width: 850px;
+      margin: 0 auto;
+}
+
+h1#title{
+      position: relative;
+      text-align: center;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      font-size: 60px;
+      margin-top: 75px;
+      font-family: "webfont1";
+}
+
+#menu{
+      position: relative;
+      margin-top: 20px;
+      width: 100%;
+}
+
+#menu ul{
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+}
+
+#menu li{
+      height: 80px;
+      font-size: 30px;
+      border-left: solid 1px #333;
+      width: 200px;
+      text-align: center;
+      position: relative;
+      border-collapse: separate;
+}
+#menu li:last-of-type{border-right: solid 1px #333;}
+
+#menu li a{
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+}
+
+#menu li img{
+      top: 5px;
+      left: 47.5px;
+      position: absolute;
+      transition: .6s all ease;
+      width: 75px;
+}
+#menu #news img{
+      top: 7.5px;
+      left: 52.5px;
+      width: 65px;
+}
+
+#menu li span{
+      position: absolute;
+      transition: .6s all ease;
+      transform: rotateY(180deg);
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      top: 17.5px;
+      left: 0;
+      font-size: 30px;
+}
+#menu #download span{
+      font-size: 25px;
+      top: 21.5px;
+}
+
+/*#info span{left: 65.52345px;}
+#news span{left: 57.8281px;}
+#story span{left: 54.17185px;}
+#cast span{left: 63.71095px;}
+#download span{left: 16.5935px;}*/
+
+#menu li:hover img{
+      transform: rotateY(180deg);
+      opacity: 0;
+}
+ #menu li:hover span{
+       transform: rotateY(0);
+       opacity: 1;
+ }
+
+#main_content{
+      margin-top: 40px;
+      background-color: rgba(255,255,255,0.75);
+}
+
+#top_news{
+      width: 425px;
+      padding-top: 5px;
+}
+
+#top_news h2{
+      width: 100%;
+      text-align: center;
+}
+
+#main_content{
+      padding-bottom: 30px;
+}
+
+
+
+footer p{
+      color: #666;
+      width: 100%;
+      text-align: center;
+      position: relative;;
+      margin-top: 40px;
+      margin-bottom: 40px;
+}
